@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Associates | Elite Visa Consultation Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#1e293b',
+                        accent: '#6366f1',
+                        gold: '#d4af37',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fadeIn': 'fadeIn 1.5s ease-in-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        .testimonial-card {
+            position: relative;
+        }
+        .testimonial-card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #d4af37 0%, #f9d423 100%);
+        }
+        .gold-border {
+            position: relative;
+        }
+        .gold-border:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #d4af37 0%, #f9d423 100%);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="flex justify-between h-24 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-passport text-3xl text-accent mr-3"></i>
+                        <span class="text-2xl font-bold text-gray-900 font-serif">Eternal Associates</span>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="ml-10 flex items-center space-x-10">
+                        <a href="#services" class="text-gray-700 hover:text-accent px-3 py-2 text-base font-medium transition duration-300">Services</a>
+                        <a href="#about" class="text-gray-700 hover:text-accent px-3 py-2 text-base font-medium transition duration-300">About Us</a>
+                        <a href="#testimonials" class="text-gray-700 hover:text-accent px-3 py-2 text-base font-medium transition duration-300">Success Stories</a>
+                        <a href="#contact" class="text-gray-700 hover:text-accent px-3 py-2 text-base font-medium transition duration-300">Contact</a>
+                        <a href="#cta" class="bg-accent text-white px-8 py-3 rounded-md text-base font-medium hover:bg-primary transition duration-300 shadow-lg hover:shadow-xl">Free Consultation</a>
+                    </div>
+                </div>
+                <div class="lg:hidden">
+                    <button class="text-gray-500 hover:text-accent focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative gradient-bg overflow-hidden pt-24">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1531058020387-3be344556be6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center mix-blend-overlay"></div>
+        </div>
+        <div class="max-w-8xl mx-auto">
+            <div class="relative z-10 pb-20 sm:pb-24 md:pb-28 lg:max-w-2xl lg:w-full lg:pb-32 xl:pb-40">
+                <div class="pt-16 sm:pt-20 lg:pt-24 lg:pb-20 lg:overflow-hidden">
+                    <div class="mt-10 mx-auto max-w-8xl px-6 sm:mt-14 sm:px-8 md:mt-20 lg:mt-24 lg:px-10 xl:mt-32">
+                        <div class="sm:text-center lg:text-left">
+                            <h1 class="text-5xl tracking-tight font-extrabold text-white sm:text-6xl md:text-7xl font-serif">
+                                <span class="block">Global Immigration</span>
+                                <span class="block text-accent">Excellence</span>
+                            </h1>
+                            <p class="mt-6 text-xl text-blue-100 sm:mt-8 sm:text-2xl sm:max-w-xl sm:mx-auto md:mt-8 md:text-2xl lg:mx-0">
+                                Premier visa consultancy since 2012, delivering bespoke immigration solutions with offices in Bangladesh and Canada.
+                            </p>
+                            <div class="mt-10 sm:mt-12">
+                                <div class="rounded-md shadow-lg">
+                                    <a href="#cta" class="w-full flex items-center justify-center px-10 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-accent hover:bg-primary md:py-5 md:text-xl md:px-12 transition duration-300 transform hover:scale-105">
+                                        Begin Your Journey <i class="fas fa-arrow-right ml-3"></i>
+                                    </a>
+                                </div>
+                                <div class="mt-6 flex items-center">
+                                    <i class="fas fa-check-circle text-green-300 text-xl mr-3"></i>
+                                    <span class="text-blue-100 text-lg">Complimentary initial consultation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 hidden lg:block">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Global travel" style="filter: brightness(0.9);">
+        </div>
+    </div>
+
+    <!-- Trust Badges -->
+    <div class="bg-white py-12 border-b border-gray-100">
+        <div class="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
+                <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png" alt="Canada" class="h-12">
+                </div>
+                <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png" alt="USA" class="h-12">
+                </div>
+                <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png" alt="UK" class="h-12">
+                </div>
+                <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png" alt="Australia" class="h-12">
+                </div>
+                <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition duration-300 col-span-2 md:col-span-1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_New_Zealand.svg/1200px-Flag_of_New_Zealand.svg.png" alt="New Zealand" class="h-12">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-white py-20">
+        <div class="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center">
+                <h2 class="text-base text-accent font-semibold tracking-wide uppercase">Proven Excellence</h2>
+                <p class="mt-4 text-4xl leading-10 font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none font-serif gold-border pb-6">
+                    Our Distinguished Achievements
+                </p>
+                <p class="mt-6 max-w-3xl text-xl text-gray-500 mx-auto">
+                    With over a decade of expertise, we've established ourselves as leaders in global immigration services.
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="bg-gradient-to-br from-primary to-secondary p-8 rounded-xl shadow-xl text-center text-white transform transition duration-500 hover:scale-105">
+                        <div class="text-5xl font-bold mb-3 font-serif animate-float">11+</div>
+                        <div class="text-xl">Years of Excellence</div>
+                        <div class="mt-4 h-1 bg-gradient-to-r from-accent to-gold mx-auto w-16"></div>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary to-secondary p-8 rounded-xl shadow-xl text-center text-white transform transition duration-500 hover:scale-105">
+                        <div class="text-5xl font-bold mb-3 font-serif animate-float">2</div>
+                        <div class="text-xl">Continental Offices</div>
+                        <div class="mt-4 h-1 bg-gradient-to-r from-accent to-gold mx-auto w-16"></div>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary to-secondary p-8 rounded-xl shadow-xl text-center text-white transform transition duration-500 hover:scale-105">
+                        <div class="text-5xl font-bold mb-3 font-serif animate-float">5000+</div>
+                        <div class="text-xl">Successful Cases</div>
+                        <div class="mt-4 h-1 bg-gradient-to-r from-accent to-gold mx-auto w-16"></div>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary to-secondary p-8 rounded-xl shadow-xl text-center text-white transform transition duration-500 hover:scale-105">
+                        <div class="text-5xl font-bold mb-3 font-serif animate-float">12+</div>
+                        <div class="text-xl">Countries Served</div>
+                        <div class="mt-4 h-1 bg-gradient-to-r from-accent to-gold mx-auto w-16"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="py-24 bg-gray-50">
+        <div class="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10">
+            <div class="text-center">
+                <h2 class="text-base text-accent font-semibold tracking-wide uppercase">Our Services</h2>
+                <p class="mt-4 text-4xl leading-10 font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none font-serif gold-border pb-6">
+                    Elite Immigration Solutions
+                </p>
+                <p class="mt-6 max-w-3xl text-xl text-gray-500 mx-auto">
+                    Comprehensive visa services tailored to your unique aspirations and circumstances.
+                </p>
+            </div>
+
+            <div class="mt-20">
+                <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Study Abroad -->
+                    <div class="pt-6">
+                        <div class="flow-root bg-white rounded-xl px-8 pb-10 shadow-lg h-full service-card transition duration-500 hover:border-accent border border-transparent">
+                            <div class="-mt-8">
+                                <div class="flex justify-center">
+                                    <span class="inline-flex items-center justify-center p-5 bg-gradient-to-br from-accent to-primary rounded-full shadow-xl">
+                                        <i class="fas fa-graduation-cap text-white text-3xl"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-10 text-2xl font-bold text-gray-900 tracking-tight text-center font-serif">Study Abroad</h3>
+                                <p class="mt-6 text-lg text-gray-500 text-center">
+                                    Premier student visa assistance for top education destinations worldwide.
+                                </p>
+                                <div class="mt-8">
+                                    <div class="flex items-center text-gray-600 text-base mb-3">
+                                        <i class="fas fa-check-circle text-accent mr-3"></i>
+                                        University selection & applications
+                                    </div>
+                                    <div class="flex items-center text-gray-600 text-base mb-3">
+                                        <i class="fas fa-check-circle text-accent mr-3"></i>
+                                        Scholarship guidance
+                                    </div>
+                                    <div class="flex items-center text-gray-600 text-base mb-3">
+                                        <i class="fas fa-check-circle text-accent mr-3"></i>
+                                        Comprehensive visa documentation
+                                    </div>
+                                    <div class="flex items-center text-gray-600 text-base">
+                                        <i class="fas fa-check-circle text-accent mr-3"></i>
+                                        Post-arrival support
+                                    </div>
+                                </div>
+                                <div class="mt-10 text-center">
+                                    <a href="#cta" class="text-accent font-medium hover:text-primary transition duration-300 inline-flex items-center">
+                                        Learn more <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Work Permit Visas -->
+                    <div class="pt-6">
+                        <div class="flow-root bg-white rounded-xl px-8 pb-10 shadow-lg h-full service-card transition duration-500 hover:border-accent border border-transparent">
+                            <div class="-mt-8">
+                                <div class="flex justify-center">
+                                    <span class="inline-flex items-center justify-center p-5 bg-gradient-to-br from-accent to-primary rounded-full shadow-xl">
+                                        <i class="fas fa-briefcase text-white text-3xl"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-10 text-2xl font-bold text-gray-900 tracking-tight text-center font-serif">Work Permit Visas</h3>
+                                <p class="mt-6 text-lg text-gray-500 text-center">
+                                    Strategic work visa solutions for career advancement abroad.
+                                </p>
+                                <div class="mt-8">
+                                    <div class="flex items-center text-gray-600 text-base mb-3">
+                                        <i class="fas fa-check-circle text-accent mr-3"></i>
+                                        Employer connections
+                                    </div>
+                                    <div class="flex items-center text-gray-600 text-base mb-3">
+                                        <i class="fas fa-check-circle text-accent mr-3"></i>
+                                        LMIA processing
+                                    </div>
+                                    <div class="flex items-center text-gray-600 text-base mb-3">
+                                        <i class="fas fa-check-circle text-accent mr-3"></i>
+                                        Work permit applications
+                                    </div>
+                                    <div class="flex items-center text-gray-600 text-base">
+                                        <i class="fas fa-check-circle text-accent mr-3"></i>
+                                        Job search strategies
+                                    </div>
+                                </div>
+                                <div class="mt-10 text-center">
+                                    <a href="#cta" class="text-accent font-medium hover:text-primary transition duration-300 inline-flex items-center">
+                                        Learn more <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visit Visas -->
+                    <div class="pt-6">
+                        <div class="flow-root bg-white rounded-xl px-8 pb-10 shadow-lg h-full service-card transition duration-500 hover:border-accent border border-transparent">
+                            <div class="-mt-8">
+                                <div class="flex justify-center">
+                                    <span class="inline-flex items-center justify-center p-5 bg-gradient-to-br from-accent to-primary rounded-full shadow-xl">
+                                        <i class="fas fa-plane text-white text-3xl"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-10 text-2xl font-bold text-gray-900 tracking-tight text-center font-serif">Visit Visas</h3>
+                                <p class="mt-6 text-lg text-gray-500 text-center">
+                                    Seamless travel visa solutions for tourism and business.
+                                </p>
+                                <div class="mt-8">
+                                    <div class="flex items-center text-gray-600 text-base mb-3">
+                                        <
